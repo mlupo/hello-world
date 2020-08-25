@@ -31,7 +31,7 @@ let mySprite = sprites.create(img`
 
 ## Give your character a name
 Click on the word ``||variables:mySprite||``, then from the drop-down list select ``Rename variable...``
-In the window that appears, entar a new name for your character!
+In the window that appears, enter a new name for your character!
 
 ```blocks
 let Jason = sprites.create(img`
