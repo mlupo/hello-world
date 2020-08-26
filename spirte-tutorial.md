@@ -4,8 +4,9 @@
 
 In this quick tutorial we will make a ``||sprites:character||`` move around, and ``||sprites:say||`` hello!
 
-## Create a Sprite 
-Find the ``||sprites:set mySprite to||`` block, and placce it inside the ``||loops:on start||`` block.
+## _
+### Create a Sprite 
+Find the ``||sprites:set mySprite to||`` block, and place it inside the ``||loops:on start||`` block.
 Click the lightbulb icon if you need a hint!
 
 ```blocks
@@ -29,9 +30,11 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## Give your character a name
+## _
+### Give your character a name
 Click on the word ``||variables:mySprite||``, then from the drop-down list select ``Rename variable...``
 In the window that appears, enter a new name for your character!
+This will become the variable name for this sprite that we will refer to later.
 
 ```blocks
 let Jason = sprites.create(img`
@@ -54,7 +57,8 @@ let Jason = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## Choose a Character
+## _
+### Choose a Character
 Click the grey square to the right of the word ``sprite`` to open the character editor.
 We will create our own character later, but for now, just choose one from the gallery.
 
@@ -79,10 +83,12 @@ let Jason = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## Make them move!
+## _
+### Make them move!
 
 Find the ``||controller:move mySprite with buttons||`` block, and add it to the bottom of the ``||loops:on start||`` block.
-Make sure you click on the placeholder name, and change it to the name of your character!
+Make sure you click on the placeholder name (mySprite), and change it to the name of your character!
+These two blocks interact with eachother because the variable names match!
 
 ```blocks
 let Jason = sprites.create(img`
@@ -106,8 +112,8 @@ let Jason = sprites.create(img`
 // @highlight
 controller.moveSprite(Jason)
 ```
-## Make them talk (kind of)!
-
+## _
+### Make them talk (kind of)!
 Find the ``||sprites:mysprite say||`` block, and place it at the bottom of the ``||loops:on start||`` block.
 As always, change the placeholder name to be the name of your character! Finally, replace the smiley face with your own hello message.
 
@@ -135,7 +141,8 @@ controller.moveSprite(jason)
 jason.say("HI!")
 ```
 
-## Oh! Let's add a ham!
+## _
+### Oh! Let's add a ham!
 Create a new ``||sprites:sprite||``, and rename it to ``ham``.
 Of course, find and select the ham image in the gallery!!
 
@@ -181,7 +188,8 @@ let ham = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## This Ham is alive!!
+## _
+### This Ham is alive!!
 We can easily make the ham follow the first character by using the ``||sprites:set myEnemy follow mySprite||``
 Place that block at the bottom of ``||loops:on start||``.
 Finally, click the plus sign on that block to open up the ``||sprites:with speed||`` option. Change the 100 to a number below 75.
@@ -229,7 +237,8 @@ let ham = sprites.create(img`
 ham.follow(jason, 40)
 ```
 
-## That's it!
+## _
+### That's it!
 This is the basic steps for creating and moving a character.
 Next, we will go over the editing tools to create your own drawings.
 Before the end of class we will practice saving and reloading files.
