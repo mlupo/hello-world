@@ -138,7 +138,7 @@ let jason = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(jason)
 // @highlight
-jason.say("HI!")
+jason.say("Hello!")
 ```
 
 ## _
