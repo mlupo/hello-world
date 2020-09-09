@@ -188,9 +188,9 @@ let ham = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## _
+## _ @fullscreen
 ### This Ham is alive!!
-We can easily make the ham follow the first character by using the ``||sprites:set myEnemy follow mySprite||``
+We can easily make the ham follow the first character by using the ``||sprites:set myEnemy follow mySprite||`` from the Sprites drawer.  
 Place that block at the bottom of ``||loops:on start||``.
 Finally, click the plus sign on that block to open up the ``||sprites:with speed||`` option. Change the 100 to a number below 75.
 
