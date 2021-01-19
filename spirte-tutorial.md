@@ -1,6 +1,6 @@
 # Let's Make a Character!
 
-## Introduction @unplugged
+## Introduction @showdialog
 
 In this quick tutorial we will make a ``||sprites:character||`` move around, and ``||sprites:say||`` hello!
 
@@ -188,7 +188,7 @@ let ham = sprites.create(img`
     `, SpriteKind.Player)
 ```
 
-## _ @fullscreen
+## _ @showhint
 ### This Ham is alive!!
 We can easily make the ham follow the first character by using the ``||sprites:set myEnemy follow mySprite||`` from the Sprites drawer.  
 Place that block at the bottom of ``||loops:on start||``.
